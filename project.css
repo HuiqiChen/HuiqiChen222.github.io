@@ -1,0 +1,161 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.header nav {
+  background-color:white; 
+  text-align: center;
+  padding: 0em 0;
+  height:50px;
+  line-height:50px;
+}
+
+
+.header nav ul {
+  list-style-type: none;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  margin-top:0%;
+}
+
+
+.header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 15px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: black; 
+}
+
+@media (max-width: 768px) {
+  nav li {
+    margin-right: 25px; /* Smaller margin for smaller screens */
+  }
+}
+
+.nav-item {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: black; 
+  display: flex;
+  line-height: 45px;
+  padding-top:0;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  background-color: rgba(255, 182, 193, 0.382);
+  display: inline-block;
+}
+
+.active {
+  background-color:  rgba(255, 182, 193, 0.382); 
+  color: white; 
+  border-radius: 9px; 
+  height: 45px;
+}
+
+
+#title-container {
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center; 
+  padding: 55px;
+  background: url('image/8.jpeg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+}
+
+#title-container h2 {
+  font-family:cursive;
+  font-weight:bolder;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color:black;
+}
+
+.logos-container {
+    text-align: center; /* Centers the logos */
+    padding: 20px; /* Adds padding around the logos */
+   
+   
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100%; /* Full height of the viewport */
+}
+
+.title-section {
+  width: 30%;
+  background-color: lightblue; /* Light grey background */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  text-align: center; /* Allows vertical scrolling if content is taller than the viewport */
+}
+
+.gallery-section {
+  width: 70%;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  overflow-y: hidden; /* Prevents vertical scrolling */
+  height: 500px; /* Fixed height for the gallery */
+}
+
+.image-gallery {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 5px; 
+}
+
+.image-gallery img {
+  display: inline-block;
+  height:250px; /* Images will scale to the height of the gallery */
+  margin-right: 10px;
+  margin-bottom:0;
+  width:150px;
+
+}
+
+/* Styles to make the scrollbar always visible */
+.gallery-section {
+  scrollbar-width: auto; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1; /* For Firefox */
+}
+
+/* For browsers that support it */
+.gallery-section::-webkit-scrollbar {
+  height: 10px; /* Height of the horizontal scrollbar */
+  width: 10px; /* Width of the vertical scrollbar, if it were to be enabled */
+}
+
+.gallery-section::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.gallery-section::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.gallery-section::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.gallery-section::-webkit-scrollbar {
+  width: 5px; /* for vertical scroll */
+  height: 5px; /* for horizontal scroll */
+}
